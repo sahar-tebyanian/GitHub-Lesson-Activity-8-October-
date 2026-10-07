@@ -1,0 +1,14 @@
+8th October 2026 Case Study: Monthly Repayment Calculator
+Scenario
+
+A bank requires a software application that calculates monthly loan repayments. Customers enter:
+
+Loan Amount (£)
+Interest Rate (%)
+Number of Years
+
+The application calculates:
+
+Monthly Repayment
+Total Amount Paid
+Total Interest Paid

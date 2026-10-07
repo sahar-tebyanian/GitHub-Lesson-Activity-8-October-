@@ -1,0 +1,18 @@
+START
+
+INPUT loan_amount
+INPUT interest_rate
+INPUT years
+
+monthly_rate = (interest_rate / 100) / 12
+number_of_payments = years * 12
+
+monthly_payment =
+loan_amount * monthly_rate *
+(1 + monthly_rate)^number_of_payments /
+((1 + monthly_rate)^number_of_payments - 1)
+
+PRINT monthly_payment
+
+END
+`

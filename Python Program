@@ -1,0 +1,25 @@
+#Python code for 8th October 
+print("Monthly Repayment Calculator")
+
+loan_amount = float(input("Enter loan amount: £"))
+interest_rate = float(input("Enter annual interest rate (%): "))
+years = int(input("Enter loan term (years): "))
+
+monthly_rate = (interest_rate / 100) / 12
+number_of_payments = years * 12
+
+monthly_payment = (
+    loan_amount *
+    monthly_rate *
+    (1 + monthly_rate) ** number_of_payments
+) / (
+    (1 + monthly_rate) ** number_of_payments - 1
+)
+
+total_paid = monthly_payment * number_of_payments
+total_interest = total_paid - loan_amount
+
+print("\nResults")
+print("Monthly Payment: £", round(monthly_payment, 2))
+print("Total Paid: £", round(total_paid, 2))
+print("Total Interest: £", round(total_interest, 2))
